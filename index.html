@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Robot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js" defer></script>
+
 </head>
 <body>
+
+    <div class="content-container">
+        <div class="content">
     
-    <p>Pozdrav svijete...</p>
+            <div style="text-align: center;">
+                <button id="btn_w">W</button>
+                <button id="btn_s">S</button>
+                <button id="btn_a">A</button>
+                <button id="btn_d">D</button>
+            </div>
+
+            <div style="text-align: center;">
+                <button id="btn_speed1">Sporo</button>
+                <button id="btn_speed2">Normalno</button>
+                <button id="btn_speed3">Brzo</button>
+            </div>
+
+            <div style="text-align: center;">
+                <button id="ble_btn">BLE Connect</button>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
