@@ -32,34 +32,26 @@ let btn_w = document.getElementById("btn_w");
 let btn_s = document.getElementById("btn_s");
 let btn_a = document.getElementById("btn_a");
 let btn_d = document.getElementById("btn_d");
+let btn_stop = document.getElementById("btn_stop");
 
 let btn_speed1 = document.getElementById("btn_speed1");
 let btn_speed2 = document.getElementById("btn_speed2");
 let btn_speed3 = document.getElementById("btn_speed3");
 
-btn_w.addEventListener("mousedown", e => {
+btn_w.addEventListener("click", e => {
     send_command(COMMAND_FORWARD);
 });
-btn_s.addEventListener("mousedown", e => {
+btn_s.addEventListener("click", e => {
     send_command(COMMAND_BACKWARD);
 });
-btn_a.addEventListener("mousedown", e => {
+btn_a.addEventListener("click", e => {
     send_command(COMMAND_LEFT);
 });
-btn_d.addEventListener("mousedown", e => {
+btn_d.addEventListener("click", e => {
     send_command(COMMAND_RIGHT);
 });
 
-btn_w.addEventListener("mouseup", e => {
-    send_command(COMMAND_STOP);
-});
-btn_s.addEventListener("mouseup", e => {
-    send_command(COMMAND_STOP);
-});
-btn_a.addEventListener("mouseup", e => {
-    send_command(COMMAND_STOP);
-});
-btn_d.addEventListener("mouseup", e => {
+btn_stop.addEventListener("click", e => {
     send_command(COMMAND_STOP);
 });
 
