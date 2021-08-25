@@ -38,6 +38,9 @@ let btn_speed1 = document.getElementById("btn_speed1");
 let btn_speed2 = document.getElementById("btn_speed2");
 let btn_speed3 = document.getElementById("btn_speed3");
 
+let speed_range = document.getElementById("speed_range");
+let btn_set_speed = document.getElementById("btn_set_speed");
+
 btn_w.addEventListener("click", e => {
     send_command(COMMAND_FORWARD);
 });
@@ -63,6 +66,12 @@ btn_speed2.addEventListener("click", e => {
 });
 btn_speed3.addEventListener("click", e => {
     send_command(COMMAND_SPEED_FAST);
+});
+
+btn_set_speed.addEventListener("click", e=> {
+    let v = speed_range.value;
+    send_command(120);
+    send_command(v);
 });
 
 //#endregion
